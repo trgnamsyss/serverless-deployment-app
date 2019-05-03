@@ -23,8 +23,8 @@ provider:
   region: ap-southeast-1
 
 # you can overwrite defaults here
-  stage: dev
-  region: ap-southeast-1
+# stage: dev
+ #region: ap-southeast-1
 
 # you can add statements to the Lambda function's IAM Role here
   iamRoleStatements:
