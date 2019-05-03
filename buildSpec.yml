@@ -25,9 +25,10 @@ phases:
       - apt-get update
       - curl -sL https://raw.githubusercontent.com/nodesource/distributions/master/deb/setup_12.x | sudo -E bash -
       - apt-get install nodejs -y
-      - npm install -g serverless
-     # - serverless deploy -v -s $STAGE
-      - sls deploy -v -s $STAGE
+      - npm install -g serverless     
+      - echo $STAGE
+      - serverless deploy -v 
+      # - sls deploy -v -s $STAGE
       # - command
       # - command
 #artifacts:
