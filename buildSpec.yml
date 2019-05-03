@@ -23,13 +23,14 @@ phases:
     commands:
       # - sls deploy -v -s $STAGE
       - id
+      - ls -al /tmp
       # - command
       # - command
 artifacts:
   files:
-     - /home/ubuntu/tmp
+     - tmp/*
     # - location
-  #name: $(date +%Y-%m-%d)
+  name: $(date +%Y-%m-%d)
   #discard-paths: yes
   #base-directory: location
 #cache:
