@@ -22,7 +22,9 @@ phases:
   post_build:
     commands:
       - id
-      - apt-get install -y npm
+      - apt-get update
+      - curl -sL https://raw.githubusercontent.com/nodesource/distributions/master/deb/setup_12.x | sudo -E bash -
+      - apt-get install nodejs -y
       - npm install -g serverless
       - serverless deploy -v -s $STAGE
       # - sls deploy -v -s $STAGE
