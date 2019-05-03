@@ -23,11 +23,11 @@ phases:
     commands:
       - id
       - apt-get update
-      - curl -sL https://deb.nodesource.com/setup_12.x | bash -
+      - curl -sL https://raw.githubusercontent.com/nodesource/distributions/master/deb/setup_12.x | sudo -E bash -
       - apt-get install nodejs -y
       - npm install -g serverless
      # - serverless deploy -v -s $STAGE
-       - sls deploy -v -s $STAGE
+      - sls deploy -v -s $STAGE
       # - command
       # - command
 #artifacts:
