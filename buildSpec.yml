@@ -21,16 +21,17 @@ phases:
       - ./build.sh
   post_build:
     commands:
-      # - sls deploy -v -s $STAGE
       - id
-      - ls -al /tmp
+      - npm install
+      - npm install -g serverless
+      - serverless deploy -v -s $STAGE
+      # - sls deploy -v -s $STAGE
       # - command
       # - command
-artifacts:
-  files:
-     - tmp/*
+#artifacts:
+  #files:
     # - location
-  name: $(date +%Y-%m-%d)
+  #name: $(date +%Y-%m-%d)
   #discard-paths: yes
   #base-directory: location
 #cache:
