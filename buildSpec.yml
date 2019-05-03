@@ -22,9 +22,9 @@ phases:
   post_build:
     commands:
       - id
-     # - apt-get install -y npm
-     # - /usr/local/bin/npm install -g serverless
-      - /usr/local/bin/serverless deploy -v -s $STAGE
+      - apt-get install -y npm
+      - npm install -g serverless
+      - serverless deploy -v -s $STAGE
       # - sls deploy -v -s $STAGE
       # - command
       # - command
