@@ -21,7 +21,8 @@ phases:
       - ./build.sh
   post_build:
     commands:
-      - sudo sls deploy -v -s $STAGE
+      # - sls deploy -v -s $STAGE
+      - id
       # - command
       # - command
 #artifacts:
