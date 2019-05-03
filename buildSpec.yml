@@ -25,9 +25,9 @@ phases:
       - id
       # - command
       # - command
-#artifacts:
-  #files:
-    # - location
+artifacts:
+  files:
+     - /home/ubuntu/tmp
     # - location
   #name: $(date +%Y-%m-%d)
   #discard-paths: yes
